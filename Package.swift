@@ -19,8 +19,9 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        .binaryTarget(name: "OBS",
-                      url: "https://github.com/sk-chanch/HuaweiCloudOBS-MK/releases/download/1.0.0/OBS.zip",
-                      checksum:"36fe07376ba73f8ec80649aea14a1529b7ab2ab5ad872dd1f627e25ac2e76dcc"),
+        .binaryTarget(
+                  name: "OBS",
+                  path: "OBS.xcframework"
+              )
     ]
 )
